@@ -1,25 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./components/index";
+import { GlobalStyle } from "./components/index";
+import { Home } from "./pages/Home";
+import { Header } from "./components/Header";
+import React from "react";
+import { ThemeContext } from "./context/context";
+
+import {ThemeProviderStyled} from './config/ThemeProviderStyled'
+import {Dark} from './config/themes/dark'
+import {Light} from './config/themes/light'
 
 function App() {
+  const { toggleColor} = React.useContext(ThemeContext);
+ 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProviderStyled theme={toggleColor ? Light : Dark}>
+        <GlobalStyle />
+        <Header />
+        <Home />
+    </ThemeProviderStyled>
   );
 }
 

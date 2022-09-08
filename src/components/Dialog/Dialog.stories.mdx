@@ -1,0 +1,25 @@
+import { ArgsTable, Canvas, Meta, Story } from "@storybook/addon-docs";
+import { Dialog } from "./index";
+
+<Meta title="Components/Dialog" component={Dialog} />
+
+## Dialog Menu
+
+##### Componente de dialog, é acompanhado de um overlay
+
+export const Template = (args) => <Dialog {...args} />;
+
+<ArgsTable of={Dialog} />
+
+<Canvas>
+  <Story
+    name="Dialog"
+    args={{
+      title: "Dialog Title",
+      children: "Dialog Content",
+      isOpen: true,
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>

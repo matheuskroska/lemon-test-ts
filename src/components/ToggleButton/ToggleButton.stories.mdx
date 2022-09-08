@@ -1,0 +1,23 @@
+import {ArgsTable, Canvas, Meta, Story} from '@storybook/addon-docs'
+import {ToggleButton} from './index';
+
+
+<Meta title="Components/ToggleButton" component={ToggleButton} />
+
+## Toggle Button
+##### Componente de botão ligado/desligado.
+##### Possui variação para se tornar um botão de opção.
+
+export const Template = (args) => <ToggleButton {...args} />;
+
+<ArgsTable of={ToggleButton}/>
+
+<Canvas>
+  <Story name="ToggleButton"
+    variant="default"
+    args={{ 
+      title: 'Button',
+    }}>
+    {Template.bind({})}
+   </Story>
+</Canvas>

@@ -1,0 +1,20 @@
+import { ArgsTable, Canvas, Meta, Story } from "@storybook/addon-docs";
+import { SmoothRender } from "./index";
+
+<Meta title="Components/SmoothRender" component={SmoothRender} />
+
+## Smooth Render
+
+##### Componente envelope que adiciona animação a renderização de outro componente.
+
+##### Animação de baixo para cima (bottomUp), ou da direita para a esquerda (rtl)
+
+export const Template = (args) => <SmoothRender {...args} />;
+
+<ArgsTable of={SmoothRender} />
+
+<Canvas>
+  <Story name="SmoothRender" variant="bottomUp" isOpen onClose args={{}}>
+    {Template.bind({})}
+  </Story>
+</Canvas>

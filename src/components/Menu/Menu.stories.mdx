@@ -1,0 +1,21 @@
+import { ArgsTable, Canvas, Meta, Story } from "@storybook/addon-docs";
+import { Menu } from "../Menu/index";
+import { ToggleButton } from "../ToggleButton/index";
+
+<Meta title="Components/Menu" component={Menu} />
+
+## Options Menu
+
+##### Componente elementar, é o bloco principal do sistema.
+
+##### Onde ficam dispostos os Toggle Buttons e Abertura de Diálogo.
+
+export const Template = (args) => <Menu {...args} />;
+
+<ArgsTable of={Menu} />
+
+<Canvas>
+  <Story name="Menu" args={{}}>
+    {Template.bind({})}
+  </Story>
+</Canvas>

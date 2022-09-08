@@ -1,0 +1,24 @@
+import { ArgsTable, Canvas, Meta, Story } from "@storybook/addon-docs";
+import { Button } from "./index";
+
+<Meta title="Components/Button" component={Button} />
+
+## Button
+
+##### Componente principal de botão, possui variação para se tornar um envelope de ícone.
+
+export const Template = (args) => <Button {...args} />;
+
+<ArgsTable of={Button} />
+
+<Canvas>
+  <Story
+    name="Button"
+    variant="primary"
+    args={{
+      children: "Button",
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
