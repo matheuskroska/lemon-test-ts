@@ -8,7 +8,7 @@ frontend developer test.
 
 ## with
 
-* typescript
+* react-ts
 * react test library
 * storybook
 * styled components
