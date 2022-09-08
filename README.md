@@ -1,6 +1,23 @@
 # lemon-test
 
-## Available Scripts
+single page featuring a dialog, smooth transitions and a extra feature: color mode.
+
+## what-for
+
+frontend developer test.
+
+## with
+
+* typescript
+* react test library
+* storybook
+* styled components
+
+## how-to
+
+### `yarn install`
+
+install all dependencies needed to run.
 
 ### `yarn start`
 
