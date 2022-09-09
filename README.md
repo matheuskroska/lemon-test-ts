@@ -1,6 +1,6 @@
 # lemon-test
 
-single page featuring a dialog, smooth transitions and a extra feature: color mode.
+single page featuring a dialog, smooth transitions and two extra features: color mode & lemonIpsum.
 
 ## what-for
 
