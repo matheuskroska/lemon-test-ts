@@ -1,4 +1,4 @@
-# lemon-test
+# lemon-test 🍋
 
 single page featuring a dialog, smooth transitions and two extra features: color mode & lemonIpsum.
 
