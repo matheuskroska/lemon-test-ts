@@ -17,7 +17,7 @@ export const Home = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [closeOnOverlayClick, setCloseOnOverlayClick] = useState<boolean>(false);
   const [animationStyle, setAnimationStyle] = useState<boolean>(false);
-  const [lemonIpsum] = LemonIpsum();
+  // const [lemonIpsum] = LemonIpsum();
   const { toggle} = React.useContext(ThemeContext);
  
   return (
@@ -41,7 +41,7 @@ export const Home = () => {
         <Portal>
           <S.SmoothRender isOpen={isOpen} onClose={() => setIsOpen(false)} variant={animationStyle ? "leftToRight" : "bottomUp"}>
             <Dialog title={"Dialog Title"} closeOnOverlayClick={closeOnOverlayClick} isOpen={isOpen} onClose={() => setIsOpen(false)}>
-              {lemonIpsum}
+              {LemonIpsum()}
             </Dialog>
           </S.SmoothRender>
         </Portal>

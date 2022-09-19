@@ -20,14 +20,19 @@ export const LemonIpsum = () => {
       ];
 
 
-    let timesRun = 0;
-    let interval = setInterval(function () {
-      timesRun += 1;
-      if (timesRun === 8) {
-        clearInterval(interval);
-      }
+    // let timesRun = 0;
+    // let interval = setInterval(function () {
+    //   timesRun += 1;
+    //   if (timesRun === 8) {
+    //     clearInterval(interval);
+    //   }
+    //   setLorem((lorem) => lorem + loremVariations[Math.floor(Math.random() * loremVariations.length)]);
+    // }, 1000);
+
+    for (let index = 0; index < 8; index++) {
       setLorem((lorem) => lorem + loremVariations[Math.floor(Math.random() * loremVariations.length)]);
-    }, 1000);
+    }
+
   }, []);
 
   return [lorem];
