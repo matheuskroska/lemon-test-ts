@@ -25,6 +25,7 @@ const baseButton = css`
 
   &:hover {
     svg {
+      pointer-events: none;
       path,
       rect {
         transition: 0.3s all ease-in-out;
@@ -49,6 +50,7 @@ export const Button = styled.button<ButtonProps>`
 
       &:hover {
         svg {
+          pointer-events: none;
           path {
             fill: ${(props) => props.theme.textColor};
           }
@@ -72,6 +74,7 @@ export const Button = styled.button<ButtonProps>`
       padding: 0;
       background-color: initial;
       svg {
+        pointer-events: none;
         path,
         rect {
           stroke: ${(props) => props.theme.iconColor};
@@ -87,6 +90,7 @@ export const Button = styled.button<ButtonProps>`
       transform: rotate(-180deg);
 
       svg {
+        pointer-events: none;
         path,
         rect {
           stroke: ${(props) => props.theme.iconColor};
@@ -101,6 +105,7 @@ export const Button = styled.button<ButtonProps>`
       transition: 0.3s all ease-in-out;
 
       svg {
+        pointer-events: none;
         stroke: ${(props) => props.theme.iconColor};
       }
     `};
