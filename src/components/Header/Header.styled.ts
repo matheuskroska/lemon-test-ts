@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { theme } from "../../config/theme";
 
 
 export const Header = styled.header`
