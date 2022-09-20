@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { LemonIpsum } from "../helpers/LemonIpsum";
 import { ThemeContext } from "../context/context";
 import React from "react";
@@ -19,6 +19,11 @@ export const Home = () => {
   const [animationStyle, setAnimationStyle] = useState<boolean>(false);
   // const [lemonIpsum] = LemonIpsum();
   const { toggle} = React.useContext(ThemeContext);
+
+  useEffect(() => {
+    setCloseOnOverlayClick(false)
+    setAnimationStyle(false)
+  }, [toggle])
  
   return (
     <H.Container>
